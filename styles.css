@@ -1,10 +1,20 @@
 body{
+    height: 100vh;
     display: flex;
+    margin: 0;
     flex-direction: column;
+    overflow: hidden;
 }
 
 body > div{
+    display: flex;
     padding: 0 15% 0 15%;
+}
+
+.top,
+.information,
+.quote{
+    flex: 1;
 }
 
 /* Top */
@@ -93,6 +103,7 @@ ul > a{
 body > .information{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-top: 3%;
     padding-bottom: 3%;
     gap: 30px;
@@ -137,6 +148,7 @@ body > .information{
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -159,12 +171,15 @@ em{
 
 /* Sign up */
 .signUp{
+    display: flex;
+    justify-content: center;
     background-color: white;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
 .signUp > .container{
+    flex: 1;
     background-color: #3882F6;
     display: flex;
     padding: 3%;
